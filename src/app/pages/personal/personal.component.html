@@ -1,0 +1,15 @@
+<div class="row">
+    @for (item of personal; track item) {
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href={{item.image}}>
+          <img src="{{item.image}}" alt="Lights" style="width:100%">
+          <div class="caption">
+          </div>
+        </a>
+        <p>Nombre:{{item.name}}</p>
+        <p>Nacionalidad.{{item.bio.nationality}}</p>
+      </div>
+    </div>
+}
+  </div>
